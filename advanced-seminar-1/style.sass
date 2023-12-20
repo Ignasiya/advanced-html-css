@@ -1,0 +1,33 @@
+@import 'vars'
+
+@mixin display()
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+/* comment */
+%font
+    font-family: sans-serif
+    font-style: normal
+
+.text 
+    color: $dolorSIte
+
+.nav
+    display: flex
+    gap: $gapNavbar
+
+.nav__link
+    text-decoration: none
+    @extend %font
+
+.content
+    @include display()
+    gap: $gapNavbar
+    &__item
+        display: inline
+        width: 25%
+        height: 200px
+        border: $solid
+
