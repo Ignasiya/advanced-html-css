@@ -12,7 +12,7 @@ summary::-webkit-details-marker {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "latoblack";
 }
 
 a {
@@ -248,6 +248,7 @@ a {
   color: #000;
 }
 .product__text {
+  font-family: "latolight";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
