@@ -1,0 +1,110 @@
+@keyframes duck-fly-1 {
+  0% {
+    left: -100px;
+    top: 76vh;
+  }
+  50% {
+    left: 27vw;
+    top: 53vh;
+  }
+  100% {
+    left: 100vw;
+    top: 45vh;
+  }
+}
+@keyframes duck-fly-2 {
+  0% {
+    left: -100px;
+    top: 30vh;
+  }
+  50% {
+    left: 60vw;
+    top: 20vh;
+  }
+  100% {
+    left: 100vw;
+    top: 35vh;
+  }
+}
+@keyframes duck-fly-3 {
+  0% {
+    left: -100px;
+    top: 15vh;
+  }
+  50% {
+    left: 37vw;
+    top: 77vh;
+  }
+  100% {
+    left: 100vw;
+    top: 58vh;
+  }
+}
+@keyframes duck-fly-4 {
+  0% {
+    left: -100px;
+    top: 62vh;
+  }
+  50% {
+    left: 33vw;
+    top: 46vh;
+  }
+  100% {
+    left: 100vw;
+    top: 49vh;
+  }
+}
+body {
+  counter-reset: count;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background-image: url(./hunt.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.duck-check {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  visibility: hidden;
+  left: -9999999px;
+}
+.duck-check:checked {
+  counter-increment: count;
+}
+.duck-check:checked ~ label {
+  display: none;
+}
+
+.counter-info {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+.counter-info::before {
+  content: counter(count);
+}
+
+.duck {
+  position: absolute;
+}
+.duck__img {
+  width: 100px;
+}
+.duck_1 {
+  animation: duck-fly-1 6s ease-in 1s both;
+}
+.duck_2 {
+  animation: duck-fly-2 6s ease-in 2s both;
+}
+.duck_3 {
+  animation: duck-fly-3 6s ease-in 3s both;
+}
+.duck_4 {
+  animation: duck-fly-4 6s ease-in 4s both;
+}/*# sourceMappingURL=style.css.map */
